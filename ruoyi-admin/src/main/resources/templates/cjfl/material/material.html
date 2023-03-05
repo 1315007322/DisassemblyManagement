@@ -11,12 +11,16 @@
                     <div class="select-list">
                         <ul>
                             <li>
-                                <label>物料名称：</label>
+                                <label>名称：</label>
                                 <input type="text" name="name"/>
                             </li>
                             <li>
                                 <label>当日单价/kg：</label>
                                 <input type="text" name="price"/>
+                            </li>
+                            <li>
+                                <label>创建时间：</label>
+                                <input type="text" class="time-input" placeholder="请选择创建时间" name="createTime"/>
                             </li>
                             <li>
                                 <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
@@ -70,7 +74,7 @@
                 },
                 {
                     field: 'name',
-                    title: '物料名称'
+                    title: '名称'
                 },
                 {
                     field: 'price',
